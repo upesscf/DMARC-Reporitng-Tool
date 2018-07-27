@@ -48,6 +48,23 @@ There are 2 jar files for the whole tool to work:
 		6.To run the Dmarc_kali.jar file: Run it on terminal using the command: 
 			java –jar Dmarc_kali.jar
 					
+# Setting up environment for Dmarc_Server.jar
+This jar need to be used in case your database is present on another server(linux based).
+	1. Start apache and mysql services in the terminal using the following commands:-
+			service apache2 start
+			service mysql start
+	2. Create new mysql user and grant it all privileges:
+		create user 'username'@'%' identified by 'password';
+	['username' specifies the name of the user you want to create and 'password' specifies its corresponding password]
+		grant all privileges on *.* to 'username'@'%';
+	3. In case 'connection refused' error is encountered try the following in linux terminal:
+			nano /etc/mysql/my.cnf
+		Add the following to the file:
+			[mysqld]
+			bind-address=0.0.0.0
+		Save the file and restart the mysql service
+	4.Run the jar file in Windows base machine as instructed above.Replace 'Dmarc_windows' with 'Dmarc_Server' in the command 
+	  'java -jar Dmarc_windows.jar'	
 # To run the Metabase.jar file run the following command in command prompt(windows)/terminal(kali):
 java –jar Metabase.jar
 						
@@ -63,3 +80,8 @@ java –jar Metabase.jar
 			The username you use for the database
 			The password you use for the database
 	
+# Installation of Apache and Mysql
+For apache
+	sudo apt-get install apache2
+For mysql
+	sudo apt-get install mysql-server
