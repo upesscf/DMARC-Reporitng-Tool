@@ -19,14 +19,15 @@ This tool performs the following tasks
 5. Apache and Mysql services (only for Kali Linux)[See the installation procedure below]
 		
 # Metabase.jar Download
-1.	Visit the website of metabase  https://www.metabase.com/start/jar.html
-2.	Click on “Get started” and scroll down, metabase.jar can be downloaded from here. 
+
+1.Visit the website of metabase  https://www.metabase.com/start/jar.html
+2.Click on “Get started” and scroll down, metabase.jar can be downloaded from here. 
  
 # Installation
 
 There are 2 jar files for the whole tool to work:
-1.	Dmarc_windows.jar(for windows) or Dmarc_kali.jar(for Kali Linux)
-2.	Metabase.jar(Reporting)
+1.Dmarc_windows.jar(for windows) or Dmarc_kali.jar(for Kali Linux) or Dmarc_Server.jar
+2.Metabase.jar(Reporting)
 
 # Setting up environment for Dmarc_windows.jar
 	# For Windows:-
@@ -49,7 +50,8 @@ There are 2 jar files for the whole tool to work:
 			java –jar Dmarc_kali.jar
 					
 # Setting up environment for Dmarc_Server.jar
-This jar need to be used in case your database is present on another server(linux based).
+
+	This jar need to be used in case your database is present on another server(linux based).
 	1. Start apache and mysql services in the terminal using the following commands:-
 			service apache2 start
 			service mysql start
@@ -65,7 +67,9 @@ This jar need to be used in case your database is present on another server(linu
 		Save the file and restart the mysql service
 	4.Run the jar file in Windows base machine as instructed above.Replace 'Dmarc_windows' with 'Dmarc_Server' in the command 
 	  'java -jar Dmarc_windows.jar'	
+
 # To run the Metabase.jar file run the following command in command prompt(windows)/terminal(kali):
+
 java –jar Metabase.jar
 						
 # Setting up environment for Metabase.jar
@@ -81,7 +85,8 @@ java –jar Metabase.jar
 			The password you use for the database
 	
 # Installation of Apache and Mysql
-For apache
-	sudo apt-get install apache2
-For mysql
-	sudo apt-get install mysql-server
+
+	For apache
+		sudo apt-get install apache2
+	For mysql
+		sudo apt-get install mysql-server
