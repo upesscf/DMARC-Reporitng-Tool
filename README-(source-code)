@@ -1,0 +1,44 @@
+# DMARC-Reporting-Tool
+DMARC refers to Domain-based Message Authentication, Reporting and Conformance. It is basically a tool build on widely deployed SPF and DKIM protocols that facilitates email authentication and reporting. It's key feature is to present a graphical overview of the results obtained.
+
+# Overview
+This tool performs the following tasks
+1.	Fetches raw data (xml, gz, zip) files from the folder and unzips them and attains the required file to be parsed.
+2.	Establishes the database connection.
+3.	Parses the file according to the concerned tags and stores it in the database. 
+4.	Generates a report containing details of the dropped mails according to DMARC policy.
+5.	Provides graphical representation of the report based on the data extracted
+
+# Requirements
+1. Windows OS or Kali Linux
+2. Java (7 or above)
+3. JRE
+4. Xampp Server (only for windows) 
+5. Apache and Mysql services (only for Kali Linux)[See the installation procedure below]
+		
+# Metabase.jar Download
+1.	Visit the website of metabase  https://www.metabase.com/start/jar.html
+2.	Click on “Get started” and scroll down, metabase.jar can be downloaded from here. 
+ 
+# Source Code Description
+The source code folder contains four files , each of them is a .java file describing four different classes.
+ UserHandler.java
+ Welcome.java
+ delete.java
+ unz.java
+
+# Folder Description(jar specific)
+1. Dmarc_windows
+2. Dmarc_kali
+3. Dmarc_server
+
+The main class execution begins from Welcome.java within all folders. User can make changes according to his/her needs specific  
+to database username,password,database name etc.
+All these changes if required need to be done in Welcome.java file.
+
+There are 3  jar files that are necessary to be added
+1.apache-logging-log4j.jar
+2.mysql-connector.jar
+3.sax.jar
+
+ 
