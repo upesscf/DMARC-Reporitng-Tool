@@ -20,14 +20,14 @@ This tool performs the following tasks
 		
 # Metabase.jar Download
 
-1.Visit the website of metabase  https://www.metabase.com/start/jar.html
-2.Click on “Get started” and scroll down, metabase.jar can be downloaded from here. 
+	1.Visit the website of metabase  https://www.metabase.com/start/jar.html
+	2.Click on “Get started” and scroll down, metabase.jar can be downloaded from here. 
  
 # Installation
 
-There are 2 jar files for the whole tool to work:
-1.Dmarc_windows.jar(for windows) or Dmarc_kali.jar(for Kali Linux) or Dmarc_Server.jar
-2.Metabase.jar(Reporting)
+	There are 2 jar files for the whole tool to work:
+		1.Dmarc_windows.jar(for windows) or Dmarc_kali.jar(for Kali Linux) or Dmarc_Server.jar
+		2.Metabase.jar(Reporting)
 
 # Setting up environment for Dmarc_windows.jar
 	# For Windows:-
