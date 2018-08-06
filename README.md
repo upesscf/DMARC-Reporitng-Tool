@@ -32,7 +32,7 @@ This tool performs the following tasks
 # Setting up environment for Dmarc_windows.jar
 	# For Windows:-
 		1.Start the xampp server. Start apache and mysql services in xampp server.
-		2.Make 2 new folders on any desired location: one for zip files (raw data) and other for where unzipped (xml) files will 		   be saved.
+		2.Make 2 new folders on any desired location: one for zip files (raw data) and other for where unzipped (xml) files will be saved.
 		3.Run the Dmarc_windows.jar file as shown below.
 		4.Enter the path (Browse) of these folders in the welcome screen. 
 		5.To run the Dmarc_windows.jar file: Double click on the jar file or run it through Command Prompt using the command: 
